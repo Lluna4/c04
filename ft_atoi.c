@@ -17,7 +17,7 @@ int ft_atoi(char *str)
 	sign = -1;
 	while (*str == ' ')
 		str++;
-	while (ft_is_numeric(*str) == 0)
+	while (*str == '+' || *str == '-')
 	{
 		if (sign == -1)
 		{
